@@ -76,6 +76,10 @@ class ASVideoSplasViewController: UIViewController {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     // MARK: -
     // MARK: Functions
     func playerStartPlaying() {
@@ -99,12 +103,7 @@ class ASVideoSplasViewController: UIViewController {
         let p: AVPlayerItem = notification.object as! AVPlayerItem
         p.seekToTime(kCMTimeZero)
     }
-    
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
