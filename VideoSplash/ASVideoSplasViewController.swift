@@ -27,6 +27,12 @@ class ASVideoSplasViewController: UIViewController {
         
         navigationController!.navigationBarHidden = true
 
+        signIn.layer.borderWidth = 1.0
+        signIn.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        signUp.layer.borderWidth = 1.0
+        signUp.layer.borderColor = UIColor.whiteColor().CGColor
+        
         //Set up player
         let urlPath  = NSBundle.mainBundle().pathForResource("Movie", ofType: "mp4")
         let movieURL = NSURL.fileURLWithPath(urlPath!)

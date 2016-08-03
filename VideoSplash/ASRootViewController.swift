@@ -15,8 +15,6 @@ class ASRootViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        navigationController!.navigationBarHidden = false
-
     }
     
     override func didReceiveMemoryWarning() {

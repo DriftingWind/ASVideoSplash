@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Video Splas View Controller-->
@@ -14,35 +15,22 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o92-mT-kgo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o92-mT-kgo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L18-O4-ebH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L18-O4-ebH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPi-EO-pu2">
-                                        <rect key="frame" x="20" y="164" width="280" height="77"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjm-Lz-wBT">
-                                        <rect key="frame" x="0.0" y="452" width="320" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
-                                        <state key="normal" title="Sign In">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Rc5-BL-Oit" kind="show" id="WT2-4y-pJu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu0-Fo-nft">
-                                        <rect key="frame" x="0.0" y="499" width="320" height="30"/>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu0-Fo-nft">
+                                        <rect key="frame" x="20" y="443" width="280" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Rr5-vo-d4k"/>
+                                            <constraint firstAttribute="height" constant="46" id="y2a-Oy-gxM"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,11 +40,52 @@
                                             <segue destination="Rc5-BL-Oit" kind="show" id="GTc-nW-4Jc"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjm-Lz-wBT">
+                                        <rect key="frame" x="20" y="380" width="280" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="MOi-0R-9oo"/>
+                                            <constraint firstAttribute="height" constant="46" id="mE1-cA-b8f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Rc5-BL-Oit" kind="show" id="WT2-4y-pJu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPi-EO-pu2">
+                                        <rect key="frame" x="38" y="115" width="244.5" height="61"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="53"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Bjm-Lz-wBT" firstAttribute="centerX" secondItem="L18-O4-ebH" secondAttribute="centerX" id="3BU-kU-EOv"/>
+                                    <constraint firstItem="jPi-EO-pu2" firstAttribute="top" secondItem="L18-O4-ebH" secondAttribute="top" constant="115" id="5pT-Y7-TaI"/>
+                                    <constraint firstItem="jPi-EO-pu2" firstAttribute="centerX" secondItem="L18-O4-ebH" secondAttribute="centerX" id="XAW-fP-ewE"/>
+                                    <constraint firstItem="Wu0-Fo-nft" firstAttribute="top" secondItem="Bjm-Lz-wBT" secondAttribute="bottom" constant="17" id="eR7-DL-YHK"/>
+                                    <constraint firstItem="Wu0-Fo-nft" firstAttribute="centerX" secondItem="L18-O4-ebH" secondAttribute="centerX" id="gPS-Oz-aQ6"/>
+                                    <constraint firstItem="Bjm-Lz-wBT" firstAttribute="height" secondItem="Wu0-Fo-nft" secondAttribute="height" id="m7c-uG-dMd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wu0-Fo-nft" secondAttribute="bottom" constant="15" id="poJ-Ne-Wxi"/>
+                                    <constraint firstItem="Bjm-Lz-wBT" firstAttribute="width" secondItem="Wu0-Fo-nft" secondAttribute="width" id="tS3-ii-of5"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L18-O4-ebH" secondAttribute="bottom" id="0qI-j5-EnA"/>
+                            <constraint firstItem="o92-mT-kgo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="F1j-7o-FHr"/>
+                            <constraint firstItem="L18-O4-ebH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="O7o-vL-AES"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o92-mT-kgo" secondAttribute="bottom" id="dvh-Se-pOe"/>
+                            <constraint firstItem="o92-mT-kgo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="rCG-it-JhD"/>
+                            <constraint firstItem="L18-O4-ebH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="rLt-hI-4e6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L18-O4-ebH" secondAttribute="trailing" constant="-16" id="w1O-5m-WLH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o92-mT-kgo" secondAttribute="trailing" constant="-16" id="yZF-8h-h8u"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wes-Lv-k7F"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -81,7 +110,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vNH-uC-9X6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4u6-IM-wTN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -97,7 +126,7 @@
             <objects>
                 <navigationController id="heU-hh-0fD" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ga1-wN-zEf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Ga1-wN-zEf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -111,6 +140,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GTc-nW-4Jc"/>
+        <segue reference="WT2-4y-pJu"/>
     </inferredMetricsTieBreakers>
 </document>
