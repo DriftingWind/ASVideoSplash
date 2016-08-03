@@ -27,11 +27,6 @@ class ASVideoSplasViewController: UIViewController {
         
         navigationController!.navigationBarHidden = true
 
-        //Not affecting background video playing
-        let audioSession : AVAudioSession = AVAudioSession.sharedInstance()
-        try! audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
-        try! audioSession.setActive(true)
-        
         //Set up player
         let urlPath  = NSBundle.mainBundle().pathForResource("Movie", ofType: "mp4")
         let movieURL = NSURL.fileURLWithPath(urlPath!)
