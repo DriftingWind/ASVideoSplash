@@ -4,7 +4,7 @@ ASVideoSplash is a sample explain how to set a Video as splash in the first laun
 
 
 
-![ASHorizontalScrollerPaging](https://github.com/AhmedAskar/ASVideoSplash/blob/master/Shoot2.png)
+![ASVideoSplash](https://github.com/AhmedAskar/ASVideoSplash/blob/master/Shoot2.png)
 
 
 To use the ASHorizontalScrollerPaging please do the following:
