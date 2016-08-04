@@ -4,7 +4,7 @@ ASVideoSplash is a sample explain how to set a Video as splash in the first laun
 
 
 
-![ASHorizontalScrollerPaging](https://github.com/AhmedAskar/ASHorizontalScrollerPaging_Swift/blob/master/ASHorizontalScrollerPaging_Swift/Shoot2.png)
+![ASHorizontalScrollerPaging](https://github.com/AhmedAskar/ASVideoSplash/blob/master/Shoot2.png)
 
 
 To use the ASHorizontalScrollerPaging please do the following:
@@ -36,9 +36,6 @@ self.player.play()
 ```
 
 Then check the sample you will find what you need
-
-# Note
-You can display this sample eighter with images or colors
 
 # License
 
