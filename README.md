@@ -10,12 +10,14 @@ ASVideoSplash is a sample explain how to set a Video as splash in the first laun
 To use the ASHorizontalScrollerPaging please do the following:
 
 
-Add the following lines of code to your ViewDidLoad:
+# Usage
+
 ```
 //Add these outlets
 @IBOutlet weak var viedoView: UIView!
 @IBOutlet weak var contentView: UIView!
 
+Add the following lines of code to your ViewDidLoad:
 //Set up player
 let urlPath  = NSBundle.mainBundle().pathForResource("Movie", ofType: "mp4")
 let movieURL = NSURL.fileURLWithPath(urlPath!)
